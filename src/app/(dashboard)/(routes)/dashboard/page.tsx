@@ -53,17 +53,13 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-4">
-      {/* Header Section */}
-      <div className="mb-8 space-y-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Explore the power of AI
-        </h2>
-        <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
+      <div className="mb-8 space-y-4 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold">Explore the power of AI</h2>
+        <p className="text-muted-foreground font-light text-sm md:text-lg">
           Chat with the smartest AI - Experience the power of AI
         </p>
       </div>
 
-      {/* Tools Section */}
       <div className="px-4 md:px-20 lg:px-32 space-y-4">
         {tools.map((tool) => (
           <Card
@@ -75,9 +71,7 @@ export default function DashboardPage() {
               <div className={`p-2 w-fit rounded-md ${tool.bgColor}`}>
                 <tool.icon className={`w-8 h-8 ${tool.color}`} />
               </div>
-              <div className="font-semibold text-sm md:text-base">
-                {tool.label}
-              </div>
+              <div className="font-semibold text-sm md:text-base">{tool.label}</div>
             </div>
           </Card>
         ))}

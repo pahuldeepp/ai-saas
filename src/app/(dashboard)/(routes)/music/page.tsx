@@ -23,7 +23,7 @@ import axios from "axios";
 import { Empty } from "@/components/Empty";
 import Loader from "@/components/loader";
 
-const ConversationPage = () => {
+const MusicPage = () => {
   const router = useRouter();
   const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
 
@@ -131,4 +131,4 @@ const ConversationPage = () => {
   );
 };
 
-export default ConversationPage;
+export default MusicPage;
